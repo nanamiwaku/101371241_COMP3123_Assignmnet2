@@ -7,6 +7,7 @@ import Dashboard from './pages/Dashboard';
 import AddEmployee from './pages/AddEmployee';
 import ViewEmployee from './pages/ViewEmployee';
 import UpdateEmployee from './pages/UpdateEmployee';
+import DeleteEmployee from './pages/DeleteEmployee';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/add-employee" element={<AddEmployee />} />
           <Route path="/view/:id" element={<ViewEmployee />} />
           <Route path="/edit/:id" element={<UpdateEmployee />} />
+          <Route path="/delete/:id" element={<DeleteEmployee />} />
         </Routes>
       </div>
     </Router>

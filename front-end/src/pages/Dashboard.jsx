@@ -31,6 +31,7 @@ const Dashboard = () => {
     }
   };
 
+
   return (
     <div className="container mt-5">
       <div className="row">
@@ -67,14 +68,17 @@ const Dashboard = () => {
                   <td>{employee.gender}</td>
                   <td>{employee.salary}</td>
                   <td>
-                    <Link to={`/view/${employee.id}`} className="btn btn-info btn-sm mx-1">
+                    <Link to={`/view/${employee._id}`} className="btn btn-info btn-sm mx-1">
                       View
                     </Link>
-                    <Link to={`/edit/${employee.id}`} className="btn btn-warning btn-sm mx-1">
+                    <Link to={`/edit/${employee._id}`} className="btn btn-warning btn-sm mx-1">
                       Edit
                     </Link>
+                    <Link to={`/delete/${employee._id}`} className="btn btn-warning btn-sm mx-1">
+                      Delete
+                    </Link>
                     <button
-                      onClick={() => handleDelete(employee.id)}
+                      onClick={() => handleDelete(employee._id)}
                       className="btn btn-danger btn-sm mx-1"
                     >
                       Delete
