@@ -59,7 +59,7 @@ const Dashboard = () => {
               </tr>
             </thead>
             <tbody>
-              {employees.map((employee) => (
+            {employees.map((employee) => (
                 <tr key={employee.id}>
                   <td>{employee.firstname}</td>
                   <td>{employee.lastname}</td>
