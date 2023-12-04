@@ -33,7 +33,6 @@ const AddEmployee = () => {
 
   return (
     <div className="container mt-5">
-      
       <h2>Add Employee</h2>
       <form className="col-md-6" onSubmit={handleSubmit}>
         <div className="mb-3">
@@ -99,7 +98,6 @@ const AddEmployee = () => {
         </div>
         <button type="submit" className="btn btn-primary">Add Employee</button>
         <Link to={`/dashboard`} className='btn btn-info'>Dashboard</Link>
-
 
         {errorMessage && <p className="mt-3 text-danger">{errorMessage}</p>}
       </form>

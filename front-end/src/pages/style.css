@@ -10,7 +10,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #bb32bb;
   padding: 20px;
   color: white;
 }
@@ -63,4 +63,307 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+
+
+
+
+/* Dash Board */
+/* App.css */
+
+body {
+  background-color: rgba(246, 157, 67, 0.345); /* Grey background */
+}
+
+.container {
+  background-color: rgba(248, 135, 135, 0.311); /* White container background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.col-md-3,
+.col-md-9 {
+  padding: 15px;
+}
+
+h2 {
+  color: #f58220; /* Orange color for headings */
+}
+
+.list-group-item {
+  background-color: #f58220; /* Orange color for list items */
+  color: #ffffff; /* White text color */
+}
+
+.list-group-item a {
+  display: block;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f8f9fa; /* Light gray background for links */
+  color: #070707; /* Dark text color */
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.list-group-item a:hover {
+  background-color: #c81111; /* Slightly darker gray on hover */
+}
+
+.btn-danger {
+  background-color: #f58220; /* Orange color for logout button */
+  border-color: #f58220;
+}
+
+.btn-danger:hover {
+  background-color: #e5671f; /* Slightly darker orange on hover */
+  border-color: #e5671f;
+}
+
+.table {
+  background-color: #44a2ea; /* Transparent table background */
+  border: 1px solid #f58220; /* Orange color for table borders */
+}
+
+.table th,
+.table td {
+  border-color: #f58220; /* Orange color for table borders */
+}
+
+.btn-info,
+.btn-warning,
+.btn-danger {
+  margin-right: 5px;
+}
+
+.btn-info,
+.btn-warning {
+  background-color: #f58220; /* Orange color for View and Edit buttons */
+  border-color: #f58220;
+}
+
+.btn-info:hover,
+.btn-warning:hover {
+  background-color: #e5671f; /* Slightly darker orange on hover */
+  border-color: #e5671f;
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Red color for Delete button */
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Slightly darker red on hover */
+  border-color: #c82333;
+}
+
+
+
+
+
+
+/* Employee Details Container */
+.employee-details-container {
+  background-color: #f2f2f2; /* Light grey background */
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Employee Details Heading */
+.employee-details-heading {
+  background-color: #f58220; /* Orange color for heading background */
+  color: #ffffff; /* White text color */
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Employee Details */
+.employee-details {
+  margin-bottom: 20px;
+}
+
+.employee-details h3 {
+  margin-bottom: 10px;
+  color: #333; /* Dark text color */
+  text-align: left; /* Align text to the left */
+}
+
+/* Employee Actions */
+.employee-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-info {
+  background-color: #17a2b8; /* Dark cyan color for info button */
+  border-color: #17a2b8;
+  color: #ffffff; /* White text color */
+}
+
+.btn-info:hover {
+  background-color: #138496; /* Dark cyan on hover */
+  border-color: #138496;
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Danger button */
+  border-color: #dc3545;
+  color: #ffffff; /* White text color */
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Dark red on hover */
+  border-color: #c82333;
+}
+
+
+/* style.css */
+
+.container {
+  background-color: #f2f2f2; /* Light grey background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.col-md-6 {
+  margin: 0 auto; /* Center the column horizontally */
+  padding: 15px;
+}
+
+h2 {
+  color: #f58220; /* Orange color for headings */
+}
+
+.form-label {
+  color: #333; /* Dark text color */
+}
+
+.form-control {
+  border-color: #f58220; /* Orange color for form control borders */
+}
+
+.form-select {
+  border-color: #f58220; /* Orange color for form select borders */
+}
+
+.btn-primary {
+  background-color: #f58220; /* Orange color for submit button */
+  border-color: #f58220;
+  color: #ffffff; /* White text color */
+}
+
+.btn-info {
+  background-color: #17a2b8; /* Dark cyan color for dashboard button */
+  border-color: #17a2b8;
+  color: #ffffff; /* White text color */
+}
+
+.btn-info:hover {
+  background-color: #138496; /* Dark cyan on hover */
+  border-color: #138496;
+}
+
+.text-danger {
+  color: #dc3545; /* Red color for error text */
+}
+
+.mt-3 {
+  margin-top: 15px;
+}
+
+
+
+
+/* Update Employee */
+
+.employee-details-container {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.employee-details-heading {
+  background-color: #f58220; /* Orange color for heading background */
+  color: #ffffff; /* Text color */
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.employee-details {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.employee-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-success {
+  background-color: #28a745; /* Green color for success button */
+  border-color: #28a745;
+  color: #ffffff; /* White text color */
+}
+
+.btn-success:hover {
+  background-color: #218838; /* Slightly darker green on hover */
+  border-color: #218838;
+}
+
+.btn-info {
+  background-color: #17a2b8; /* Dark cyan color for info button */
+  border-color: #17a2b8;
+  color: #ffffff; /* White text color */
+}
+
+.btn-info:hover {
+  background-color: #138496; /* Dark cyan on hover */
+  border-color: #138496;
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Red color for danger button */
+  border-color: #dc3545;
+  color: #ffffff; /* White text color */
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Slightly darker red on hover */
+  border-color: #c82333;
 }

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './style.css'
 
 const API_URL = 'http://localhost:8089/api/v1/emp/employees/';
 

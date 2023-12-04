@@ -38,7 +38,6 @@ const ViewEmployee = () => {
 
   return (
     <div className="employee-details-container">
-    
       <div className="employee-details-heading">
         <h4>Employee Management System</h4>
       </div>
@@ -50,9 +49,12 @@ const ViewEmployee = () => {
         <h3>Salary: ${employee.salary}</h3>
       </div>
       <div className='employee-actions'>
-        <Link to={`/dashboard`} className='btn btn-info'>Dashboard</Link>
-        <Link to={`/dashboard/edit-employee/${employee._id}`} className='btn btn-info'>Update</Link>
-        <button className='btn btn-danger' onClick={handleLogout}>Logout</button>
+        <Link to={`/dashboard`} className='btn btn-info'>
+          Dashboard
+        </Link>
+        <button className='btn btn-danger' onClick={handleLogout}>
+          Logout
+        </button>
       </div>
     </div>
   );
