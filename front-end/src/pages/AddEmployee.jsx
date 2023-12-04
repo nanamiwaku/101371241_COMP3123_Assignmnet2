@@ -70,15 +70,21 @@ const AddEmployee = () => {
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="gender" className="form-label">Gender:</label>
-          <input
-            type="text"
-            className="form-control"
+          <label htmlFor="gender" className="form-label">
+            Gender:
+          </label>
+          <select
+            className="form-select"
             id="gender"
             name="gender"
             value={formData.gender}
             onChange={handleChange}
-          />
+          >
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
         </div>
         <div className="mb-3">
           <label htmlFor="salary" className="form-label">Salary:</label>

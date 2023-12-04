@@ -12,6 +12,7 @@ const Dashboard = () => {
     fetchData();
   }, []);
 
+ /*
   const fetchData = async () => {
     try {
       const response = await axios.get('http://localhost:8089/api/v1/emp/employees');
@@ -20,15 +21,36 @@ const Dashboard = () => {
       console.error('Error fetching employee data:', error);
     }
   };
+  */
+
+  const fetchData = () => {
+      axios.get('http://localhost:8089/api/v1/emp/employees')
+      .then(response =>{
+        setEmployees(response.data);
+      })
+      .catch(error => {
+      console.error('Error fetching employee data:', error);
+      });
+  };
 
   const handleDelete = async (id) => {
-    try {
-      await axios.delete(`http://localhost:8089/api/v1/emp/employees/${id}`);
-      // After deleting, fetch updated data
-      fetchData();
-    } catch (error) {
-      console.error('Error deleting employee:', error);
-    }
+      await axios.delete(`http://localhost:8089/api/v1/emp/employees/${id}`)
+      .then(() =>{
+        setEmployees((employees.filter(employee => employee._id !== id)));
+      })
+      .catch (error => {
+        console.error('There was an error deleting the employee:', error);
+        // You might want to display an error message to the user here
+      });
+  };
+  
+
+  const handleLogout = () => {
+    // Remove the token or user data from storage
+    localStorage.removeItem('userToken'); // Adjust this according to your token storage method
+
+    // Redirect to the login page
+    navigate('/');
   };
 
 
@@ -44,6 +66,7 @@ const Dashboard = () => {
             <li className="list-group-item">
               <Link to="/add-employee">Add Employee</Link>
             </li>
+            <button className='btn btn-danger' onClick={handleLogout}>Logout</button>
           </ul>
         </div>
         <div className="col-md-9">
@@ -74,14 +97,9 @@ const Dashboard = () => {
                     <Link to={`/edit/${employee._id}`} className="btn btn-warning btn-sm mx-1">
                       Edit
                     </Link>
-                    <Link to={`/delete/${employee._id}`} className="btn btn-warning btn-sm mx-1">
-                      Delete
-                    </Link>
                     <button
                       onClick={() => handleDelete(employee._id)}
-                      className="btn btn-danger btn-sm mx-1"
-                    >
-                      Delete
+                      className="btn btn-danger btn-sm mx-1">Delete
                     </button>
                   </td>
                 </tr>
